@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Netflix</title>
+</head>
+<body>    
+    <header>
+        <div class="navigation">
+            <img src="./assets/netflix_full_logo.png" />
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                    <li><a href="#">Navegar por idiomas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="login">
+            <img src="./assets/magnifying-glass.svg" />
+
+            <div>
+                <img src="./assets/user.svg" />
+                <img src="./assets/caret-right-fill.svg" />
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home"></section>
+        
+        <section>
+            <h2>Filmes populares</h2>
+            
+            <div class="movies-tv-carrossel">
+                <button onclick="voltar('popular')"> &lt; </button>
+                <div class="carrossel" id="popular"></div>
+                <button onclick="avancar('popular')"> &gt; </button>
+            <<div>
+        </section>
+
+        <section>
+            <h2>Filmes bem avaliados</h2>
+            <div class="movies-tv-carrossel">
+                <button onclick="voltar('top_rated')"> &lt; </button>
+                <div class="carrossel" id="top_rated"></div>
+                <button onclick="avancar('top_rated')"> &gt; </button>
+            </div>
+        </section>
+        <section>
+            <h2>Em breve</h2>
+            <div class="movies-tv-carrossel">
+                <button onclick="voltar('upcoming')"> &lt; </button>
+                <div class="carrossel" id="upcoming"></div>
+                <button onclick="avancar('upcoming')"> &gt; </button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

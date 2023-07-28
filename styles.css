@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+    color: rgb(255, 255, 255);
+}
+
+#home {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+header div, header .navigation ul {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+header .navigation img {
+    width: 4rem;
+}
+
+header .navigation ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+header .navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+header .login {
+    gap: 1rem
+}
+
+header .login img {
+    width: 1.5rem;
+}
+
+header .login div img:last-of-type {
+    width: 1rem;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+section {
+    margin: 4rem 0;
+    padding: 0 4rem
+}
+
+section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.bom {
+    color: rgb(0,255,98);
+}
+
+.medio {
+    color: yellow;
+}
+
+.ruim {
+    color: red;
+}
+
+
+.imagemFilme {
+    transition: .4s;
+}
+
+.imagemFilme:hover {
+    transform: scale(1.2);
+}
+
+
+.movies-tv-carrossel {
+    display: flex;
+    position: relative;
+}
+
+.movies-tv-carrossel button {
+    all: unset;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.772);
+    padding: 0 1rem;
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.movies-tv-carrossel button:first-of-type {
+    left: 0;
+}
+
+.movies-tv-carrossel button:last-of-type {
+    right: 0;
+}
+
+.carrossel  {
+    display: flex;
+    position: relative;
+    gap: 0.2rem;
+    overflow-x: auto;
+}
+
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carrossel img {
+    width: 150px;
+}
+
